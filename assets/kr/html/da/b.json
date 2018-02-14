@@ -1,0 +1,24 @@
+[
+  {
+    "id": "a",
+    "name": "Jens Hansen",
+    "img": "desert.jpg"
+  },
+  {
+    "id": "b",
+    "name": "Ole Rasmussen",
+    "img": "Jellyfish.jpg",
+    "category": "Seasonals"
+  },
+  {
+    "id": "c",
+    "name": "Futte Pedersen",
+    "img": "Lighthouse.jpg"
+  },
+  {
+    "id": "d",
+    "name": "Rune Hansen",
+    "img": "Tulips.jpg"
+  }
+
+]

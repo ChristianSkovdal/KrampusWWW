@@ -1,0 +1,24 @@
+[
+  {
+    "id": "a",
+    "name": "James Hanson",
+    "img": "desert.jpg"
+  },
+  {
+    "id": "b",
+    "name": "Kurt Vile",
+    "img": "Jellyfish.jpg",
+    "category": "Seasonals"
+  },
+  {
+    "id": "c",
+    "name": "Bruce Springer",
+    "img": "Lighthouse.jpg"
+  },
+  {
+    "id": "d",
+    "name": "Linda McNeil",
+    "img": "Tulips.jpg"
+  }
+
+]
