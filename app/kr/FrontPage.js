@@ -9,15 +9,31 @@ Ext.define('OdClient.kr.FrontPage', {
     cls: 'frontpage',
 
     flipAll() {
+        if (!this.flipped) {
+            this.flipped=true;
+            this.query('tile').forEach((t) => Ext.defer(() => t.setActiveItem(1), getRandomInt(100, 1000)));    
+        }
 
-        this.query('tile').forEach((t) => Ext.defer(() => t.setActiveItem(1), getRandomInt(100, 1000)));
-        
     },
 
     listeners: {
         initialize: function (cmp) {
 
-            for (var i = 0; i < 4; i++) {
+            let width = window.innerWidth;
+            let height = window.innerHeight;
+            let max1 = max2 = 4;
+            if (width <= 768) {
+                max1 = max2 = 3;
+            }
+
+            if (height < width) {
+                max2++;
+            }
+            else {
+                max1++;
+            }
+
+            for (var i = 0; i < max1; i++) {
 
                 let col = cmp.add({
                     xtype: 'container',
@@ -25,14 +41,14 @@ Ext.define('OdClient.kr.FrontPage', {
                     layout: 'hbox'
                 });
 
-                for (var j = 0; j < 4; j++) {
+                for (var j = 0; j < max2; j++) {
                     col.add({
                         xtype: 'tile',
                     });
                 }
             }
 
-            Ext.defer(()=>this.flipAll(), 5000);
+            Ext.defer(() => this.flipAll(), 5000);
         }
     }
 

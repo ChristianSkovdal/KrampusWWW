@@ -3,7 +3,7 @@ Ext.define('OdClient.kr.NavigationPage', {
     xtype: 'navipage',
 
     requires: [
-        'OdClient.kr.BCntr',
+        'OdClient.kr.BeerPage',
         'OdClient.kr.Toolbar',
         'Shared.HtmlContainer'
     ],
@@ -17,9 +17,9 @@ Ext.define('OdClient.kr.NavigationPage', {
             xtype: 'navibar'
         },
         {
-            xtype: 'bcntr',
+            xtype: 'beerpage',
             bind: {
-                url: '/assets/kr/html/{currentLocaleCode}/b.json',
+                url: '/assets/kr/html/{currentLocaleCode}/beers.json',
             }
         },
         {

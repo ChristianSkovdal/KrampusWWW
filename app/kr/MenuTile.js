@@ -4,6 +4,8 @@ Ext.define('OdClient.kr.MenuTile', {
 
     layout: 'vbox',
 
+    style: 'background: black;',
+
     defaults: {
         xtype: 'button',
         handler: 'menuButtonClick',

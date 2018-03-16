@@ -17,7 +17,26 @@ Ext.define('OdClient.kr.FrontTile', {
 Ext.define('OdClient.kr.BackTile', {
     extend: 'OdClient.kr.FlipTile',
     xtype: 'backtile',
-    style: 'background-image: url(/assets/kr/tst.jpg);cursor: pointer;',
+
+    listeners: {
+        initialize: (cmp) => {
+            cmp.setStyle(`background-image: url(/assets/kr/tiles/${cmp.pickTileImg()}.jpg);cursor: pointer;background-size: cover`);
+        }
+
+    },
+
+    pickTileImg() {
+        const max=28;
+        let img = getRandomInt(1, max);
+        this.picked = this.picked || [];
+
+        while (this.picked.indexOf(img)>=0) {
+            img = getRandomInt(1,max);
+        }
+        this.picked.push(img);
+        return img;
+
+    }
 });
 
 Ext.define('OdClient.kr.Tile', {

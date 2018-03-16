@@ -1,2 +1,2 @@
 // @tag full-page
-// @require C:\dev\test\OdClient\app.js
+// @require /Users/csa/Documents/Dev/websites/KrampusWWW/app.js

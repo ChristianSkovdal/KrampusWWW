@@ -5,13 +5,13 @@
 //});
 
 
-Ext.define('OdClient.kr.BTile', {
+Ext.define('OdClient.kr.BeerTile', {
     extend: 'Ext.Container',
-    xtype: 'btile',
+    xtype: 'beertile',
 
     margin: 20,
-    width: 200,
-    height: 200,
+    width: 400,
+    height: 400,
     shadow: true,
 
     config: {
@@ -42,13 +42,18 @@ Ext.define('OdClient.kr.BTile', {
             tpl: `
             <div class="image-container">
                 <img src="/assets/kr/{img}" style="width:100%;" />
-                <div style="text-align:center;color:black;">{name}</div>
-            </div>`
+            </div>
+            <div class="beertile-title">{name}</div>
+            `
         },
         {
             xtype: 'container',
             itemId: 'back',
-            tpl: `<div style="url(/assets/kr/{img}"><div>{name}</div></div>`
+            tpl: `
+            <div class="image-container">
+            <div class="beertile-back">{name}</div>
+            <div class="beertile-description">{description}</div>
+            </div>`
         }
     ]
 

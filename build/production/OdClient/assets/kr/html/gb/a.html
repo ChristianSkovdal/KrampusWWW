@@ -1,0 +1,10 @@
+﻿In my current project, we need to store a lot of constant values to run the system which can be achieved in different ways like using Resource File, Web.config, etc. We want those values to be environment specific (e.g., Development, Stage, QA, Production) and also Intellisense feature to use those values.
+
+Existing approaches have the following limitations:
+
+In case of config files, Intellisense feature is not available. Hence, there is always a probability of human error which is very difficult to find out.
+In our scenario, there are cases where we want collection object to be populated from the constant values which are cumbersome in case of resource file approach used.
+To enhance maintainability, values used for given context / module should be clubbed together which is difficult to achieve using existing approaches.
+While searching for a better way, I found the .NET System.Dynamic.ExpandoObjec class, it will represent an object whose members can be dynamically added and removed at run time. I also found that an ExpandoObject was being used to represent an XML document. That is, while parsing, an ExpandoObject instance is created and each XML element is added as a member of the ExpandoObject. With a little more research, I found "ImpromptuInterface" package in NuGet. With the “ImpromptuInterface", any object can be wrapped with an interface.
+
+So we decided to load the XML data into a dynamic type using the System.Dynamic.ExpandoObjec class.

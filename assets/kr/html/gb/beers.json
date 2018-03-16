@@ -1,0 +1,32 @@
+[
+  {
+    "id": "a",
+    "name": "Wormwood",
+    "details": "Nocturnally Hoppy Porter",
+    "description": "A fallen angel who brings terrible plagues upon the Earth.",
+    "img": "tiles/1.jpg"
+  },
+  {
+    "id": "b",
+    "name": "Forcas",
+    "details": "Bitter sweet amber colored IPA",
+    "description": "In demonology, Forcas is a Knight of Hell, and rules 20 legions of demons.[1] He teaches Philosophy, Astronomy (Astrology to some authors), Rhetoric, Logic, Chiromancy and Pyromancy.",
+    "img": "tiles/2.jpg",
+    "category": "Seasonals"
+  },
+  {
+    "id": "c",
+    "name": "Abaddon",
+    "img": "tiles/3.jpg",
+    "details": "Deceptively pale ale",
+    "description": "In the New Testament Book of Revelation, an angel called Abaddon is described as the king of an army of locusts; his name is first transcribed in Greek (Revelation 9:11—, whose name in Hebrew is Abaddon, The Angel of Death."
+  },
+  {
+    "id": "d",
+    "name": "Kobal",
+    "img": "tiles/4.jpg",
+    "details": "Laughably tasty lager",
+    "description": "Entertainment Director of Hell, patron of comedians. Demon of hilarity"
+  }
+
+]

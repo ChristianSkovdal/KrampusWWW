@@ -1,5 +1,5 @@
 $app-name:  dynamic( 'OdClient' );
-$image-search-path: 'C:/dev/test/OdClient/build/development/OdClient/modern/resources';
+$image-search-path: '/Users/csa/Documents/Dev/websites/KrampusWWW/build/development/OdClient/modern/resources';
 $theme-name:  dynamic( 'theme-material' );
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractmanager: dynamic(true);;
@@ -630,9 +630,9 @@ $include-ext-viewport-ios: dynamic(true);;
 $include-ext-viewport-viewport: dynamic(true);;
 $include-ext-viewport-wp: dynamic(true);;
 $include-ext-viewport-windowsphone: dynamic(true);;
-$include-odclient-kr-bcntr: dynamic(true);;
-$include-odclient-kr-btile: dynamic(true);;
 $include-odclient-kr-backtile: dynamic(true);;
+$include-odclient-kr-beerpage: dynamic(true);;
+$include-odclient-kr-beertile: dynamic(true);;
 $include-odclient-kr-fliptile: dynamic(true);;
 $include-odclient-kr-frontpage: dynamic(true);;
 $include-odclient-kr-fronttile: dynamic(true);;

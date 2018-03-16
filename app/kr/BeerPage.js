@@ -1,6 +1,6 @@
-Ext.define('OdClient.kr.BCntr', {
+Ext.define('OdClient.kr.BeerPage', {
     extend: 'Ext.Container',
-    xtype: 'bcntr',
+    xtype: 'beerpage',
 
     scrollable: true,
 
@@ -40,7 +40,7 @@ Ext.define('OdClient.kr.BCntr', {
                         if (tile == null) {
                             me.add({
                                 itemId: rec.getId(),
-                                xtype: 'btile',
+                                xtype: 'beertile',
                                 data: rec.getData()
                             });
                         }

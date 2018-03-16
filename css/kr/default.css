@@ -8,7 +8,7 @@
 }
 
 .frontpage {
-    background-image: url(/assets/kr/drinde.jpg) !important;
+    background-image: url(/assets/kr/Krampus-Logo-Original.png) !important;
     background-repeat: no-repeat;
     background-position: center;
     /*background: url(assets/kr/drinde.jpg) no-repeat center center fixed;*/
@@ -16,6 +16,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-color: black;
 }
 
 .image-container {
@@ -33,4 +34,16 @@
         height: 25px;
         width: 100%;
         padding: 5px;
-    }
+}
+
+.x-button-label  {
+    color: lightyellow;
+    background-color: black;
+}
+
+beertile-title {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+
+}

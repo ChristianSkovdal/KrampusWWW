@@ -18,7 +18,7 @@ Ext.define('OdClient.kr.MainModel', {
             autoLoad: true,
             proxy: {
                 type: 'ajax',
-                url: '/assets/kr/html/{currentLocaleCode}/b.json',
+                url: '/assets/kr/html/{currentLocaleCode}/beers.json',
 
                 reader: {
                     type: 'json',
