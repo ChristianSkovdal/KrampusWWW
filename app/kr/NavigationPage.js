@@ -5,7 +5,8 @@ Ext.define('OdClient.kr.NavigationPage', {
     requires: [
         'OdClient.kr.BeerPage',
         'OdClient.kr.Toolbar',
-        'Shared.HtmlContainer'
+        'Shared.HtmlContainer',
+        'Shared.decals.DecalMain'
     ],
 
     cls: 'navi-bk',
@@ -23,7 +24,7 @@ Ext.define('OdClient.kr.NavigationPage', {
             }
         },
         {
-            xtype: 'htmlcntr',            
+            xtype: 'htmlcntr',
             padding: 20,
             bind: {
                 url: '/assets/kr/html/{currentLocaleCode}/a.html',
@@ -41,6 +42,12 @@ Ext.define('OdClient.kr.NavigationPage', {
                     }
                 }
             ]
+        },
+        {
+            xtype: 'decalmain',
+            shadow: true,
+            margin: 10
+
         }
     ]
 

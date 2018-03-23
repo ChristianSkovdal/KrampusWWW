@@ -7,11 +7,11 @@ Ext.application({
     name: 'OdClient',
 
     launch: function () {
-
     },
 
     requires: [
-        'OdClient.kr.Main'
+        'OdClient.kr.Main',
+        'OdClient.bh.Main'
     ],
 
     mainView: Ext.mainView

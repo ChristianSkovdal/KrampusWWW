@@ -4,7 +4,8 @@ Ext.define('OdClient.kr.Main', {
 
     requires: [
         'Ext.MessageBox',
-        'OdClient.kr.*'
+        'OdClient.kr.*',
+        
     ],
 
     controller: 'main',

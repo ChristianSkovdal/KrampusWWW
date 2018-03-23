@@ -82,6 +82,10 @@ Ext.define('OdClient.kr.Toolbar', {
         {
             pageIndex: 2,
             html: '<img src="/assets/kr/lighthouse.jpg"/>',
+        },        
+        {
+            pageIndex: 3,
+            html: '<img src="/assets/kr/Desert.jpg"/>',
         },
     ]
 
