@@ -1,0 +1,227 @@
+﻿.imgbtn {
+    color: red;
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;    
+    background-position: center; 
+    position: relative;
+    left: 0;
+    bottom:0px;
+}
+
+.navibar {
+    background-color: aquamarine;
+    background-image: url(/assets/bh/images/bkh.jpg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    
+}
+
+imgbtn-normal {
+    color:lightblue;
+}
+
+imgbtn-pressed {
+    color:lightpink;
+}
+
+@media only screen and (min-width: 1025px) {
+    .big {
+        height: 120px;
+        width: 120px;    
+    }
+
+    .i1 {
+        background-image: url(/assets/bh/images/a.jpg);
+    }
+    
+    .i2 {
+        background-image: url(/assets/bh/images/b.jpg);
+    }
+    
+    .i3 {
+        background-image: url(/assets/bh/images/c.jpg);
+    }
+    
+    .i4 {
+        background-image: url(/assets/bh/images/a.jpg);
+    }
+
+} 
+
+@media only screen and (max-width: 1024px) {
+
+    .i1 {
+        background-image: url(/assets/bh/images/a.png);
+    }
+    
+    .i2 {
+        background-image: url(/assets/bh/images/b.png);
+    }
+    
+    .i3 {
+        background-image: url(/assets/bh/images/c.png);
+    }
+    
+    .i4 {
+        background-image: url(/assets/bh/images/a.png);
+    }    
+} 
+
+@media only screen and (orientation: landscape) {
+
+    .navibar {
+        background-image: url(/assets/bh/images/bkv.jpg);
+        background-repeat: repeat-y;
+        background-color: darkred;
+        background-position: left;
+    }
+
+    .imgbtn {
+        color: darkgreen;
+    }
+}
+
+.imgbtn .row {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+.imgbtn .row .inner {
+    position:relative;
+    left:-50%;
+}
+
+
+
+
+
+
+/*
+$color-blue: dynamic(#167abc);
+$color-soft-cyan: dynamic(#03b4d5);
+$color-soft-blue: dynamic(#2eadf5);
+$color-soft-green: dynamic(#9cc96b);
+$color-soft-orange: dynamic(#ffc107);
+$color-soft-red: dynamic(#e44959);
+$color-soft-purple: dynamic(#925e8b);
+$color-gray: dynamic(#949495);
+$color-green: dynamic(#16b603);
+
+*/
+/*
+.ultra-icon hover {
+    background-color: aquamarine;
+}
+
+
+.bk-main {
+    background-color: #f6f6f6;
+}
+
+
+
+.normal img {
+    -webkit-filter: drop-shadow(5px 5px 5px #222 );
+    filter: drop-shadow(5px 5px 5px #222);
+    margin-left: 0px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.pressed img {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+/*.ultra-icon img:hover {
+    -webkit-filter: brightness(170%);
+    -webkit-filter: drop-shadow(5px 5px 5px #222 );
+    filter: drop-shadow(5px 5px 5px #222);
+}*/
+/*
+body {
+    font-family: 'Times New Roman', Times, serif
+}
+
+.x-panelheader-body-el {
+    background-color: #4b4b4b !important;
+}
+
+.card {
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+    color: #4b4b4b;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-bottom: 0 none;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+}
+
+.profileimg {
+    border: 3px solid whitesmoke;
+}
+
+.profileimg {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profileimg img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.card .title {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.card-background {
+    background-image: url(/assets/bh/tulips.jpg);
+    background-repeat:no-repeat;
+    background-size: auto 300px, cover;
+    background-position-y: -180px;
+}
+
+
+.table {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    padding: 0px;
+    text-align: center;
+}
+
+
+    .table .cell {
+        padding-top: 5px;
+        width: 20%;
+        height: 100%;
+        display: inline-block;
+    }
+
+.middlecell {
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+h1 {
+    font-size: 22px;
+    text-align:center;
+    line-height: 40px;
+    font-weight:bold;
+}
+*/

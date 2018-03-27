@@ -2,7 +2,7 @@ Ext.define('Shared.LocalizedController', {
     extend: 'Ext.app.ViewController',
 
     config: {
-        assetsPath: '' // /assets/kr
+        assetsPath: ''
     },
 
     init() {
@@ -22,10 +22,8 @@ Ext.define('Shared.LocalizedController', {
     updateLng(lng) {
         let vm = this.getViewModel();
         vm.set('currentLocaleName', lng == 'da' ? 'GB' : 'DK');
-
         Ext.Ajax.request({
-            //url: `/assets/kr/${lng}.json`,
-            url: `/${this.assetsPath}/${lng}.json`,
+            url: `/${this.config.assetsPath}/text/${lng}/language.json`,
             scope: this,
             success: function (response) {
                 vm.set('language', JSON.parse(response.responseText));

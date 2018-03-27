@@ -2,13 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\app",
+    "\\app\\bh",
     "\\app\\kr",
     "\\assets",
-    "\\assets\\kr",
     "\\css",
     "\\css\\kr",
     "\\Shared"
   ],
-  "SelectedNode": "\\app\\kr\\FrontPage.js",
+  "SelectedNode": "\\app\\bh\\Main.js",
   "PreviewInSolutionExplorer": false
 }

@@ -1,2 +1,2 @@
 // @tag full-page
-// @require C:\dev\test\KrampusWWW\app.js
+// @require C:\dev\test\OnDemandTesting\app.js
